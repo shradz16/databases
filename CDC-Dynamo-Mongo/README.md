@@ -73,4 +73,5 @@ I have used virtualenv to install and package the requirements
 ## Execution:
 
 Any changes in the DynamoDB are captured by the DynamoDB stream and stored in the form of events. DynamoDB Stream can store the events for 24 hours after which it flushes out. As soon as any insert, modify, or delete action is done on the DynamoDB table, a Lambda function is invoked and a python script is executed which performs upsert/ delete action on the MongoDB and replicates the changes record by record in seconds.
+
 Mongo has _id as a primary key and if not defined, an arbitrary value gets assigned. We haven't assigned any value to _id since we will use "id" as a primary key and will create an index later on.
