@@ -66,7 +66,7 @@ I have used virtualenv to install and package the requirements
 
 ## Add a trigger & Enable DynamoDB stream
 
-- On the function page, go to Add Trigger and enter the info below
+- On the function page, go to Add Trigger and select the DynamoDB table
 - Click on "Enable trigger" to enable DynamoDB streams.
 
 
